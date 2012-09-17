@@ -1,9 +1,9 @@
-# Build and Release Folders
-bin-debug/
-bin-release/
-
-# Project property files
-.actionScriptProperties
-.flexProperties
-.settings/
-.project
+tmp/
+modules/
+lib/
+test-result/
+logs/
+*.ipr
+*.iws
+*.iml
+initial-data.yml

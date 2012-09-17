@@ -1,0 +1,19 @@
+{
+    "system": {
+        "systemTime": "2012-09-10T08:16:07.588+02:00",
+        "hostname": "dev-0815.demo.example.com",
+        "port": "8080"
+    },
+    "application": {
+        "name": "product",
+        "version": "1.18-SNAPSHOT",
+        "status": "OK",
+        "message": "",
+        "statusDetails": {
+            "dataSupply": {
+                "status": "OK",
+                "message": ""
+            }
+        }
+    }
+}

@@ -1,0 +1,77 @@
+# you describe your data using the YAML notation here
+# and then load them using Fixtures.load("data.yml")
+
+models.MonitorEnvironment(qa):
+  name: qa
+
+models.MonitorGroup(qa_sys1):
+  name: System 1
+  environment: qa
+
+models.MonitorResource(qa_sys1_a):
+  name: Monitor A
+  group: qa_sys1
+  url: http://a.sys1.qa.example.com
+
+models.MonitorResource(qa_sys1_b):
+  name: Monitor B
+  group: qa_sys1
+  url: http://b.sys1.qa.example.com
+
+
+models.MonitorGroup(qa_sys2):
+  name: System 2
+  environment: qa
+
+models.MonitorResource(qa_sys2_c):
+  name: Monitor C
+  group: qa_sys2
+  url: http://c.sys2.qa.example.com
+
+
+models.MonitorEnvironment(prod):
+  name: prod
+
+# ATTENTION: Play converts the times to UTC (in our case plus 2 hours)
+
+models.PingPoint(p1):
+  timestamp: 2012-09-05T23:42:01
+  monitorResource: qa_sys1_b
+  statusCode: 200
+  responseTime: 213
+
+models.PingPoint(p2):
+  timestamp: 2012-09-05T23:42:31
+  monitorResource: qa_sys1_b
+  statusCode: 200
+  responseTime: 267
+
+models.PingPoint(p3):
+  timestamp: 2012-09-05T23:43:02
+  monitorResource: qa_sys1_b
+  statusCode: 200
+  responseTime: 234
+
+models.PingPoint(p4):
+  timestamp: 2012-09-05T23:43:40
+  monitorResource: qa_sys1_b
+  statusCode: 200
+  responseTime: 328
+
+models.PingPoint(p5):
+  timestamp: 2012-09-05T23:44:01
+  monitorResource: qa_sys1_b
+  statusCode: 500
+  responseTime: 299
+
+models.PingPoint(p6):
+  timestamp: 2012-09-05T23:45:01
+  monitorResource: qa_sys1_b
+  statusCode: 200
+  responseTime: 245
+
+models.PingPoint(p7):
+  timestamp: 2012-09-05T23:46:01
+  monitorResource: qa_sys1_b
+  statusCode: 404
+  responseTime: 278

@@ -1,0 +1,59 @@
+###############################################################
+# Sample configuration file
+# copy over to initial-data.yml and modify to your needs
+###############################################################
+
+# --------- develop-stable environment
+
+models.MonitorEnvironment(qa):
+  name: qa
+  sortKey: 1
+
+models.MonitorGroup(qa_sys1):
+  name: Product
+  environment: qa
+  sortKey: 1
+
+models.MonitorResource(qa_sys1_varnish):
+  name: Varnish
+  group: qa_sys1
+  url: http://qa.example.com/sys1/admin/status.json
+
+
+models.MonitorGroup(qa_sys2):
+  name: SAN
+  environment: qa
+  sortKey: 2
+
+models.MonitorResource(qa_sys2_varnish):
+  name: Varnish
+  group: qa_sys2
+  url: http://qa.example.com/sys2/admin/status.json
+
+
+# --------- develop environment
+
+models.MonitorEnvironment(develop):
+  name: develop
+  sortKey: 2
+
+models.MonitorGroup(develop_sys1):
+  name: Product
+  environment: develop
+  sortKey: 1
+
+models.MonitorResource(develop_sys1_varnish):
+  name: Varnish
+  group: develop_sys1
+  url: http://develop.example.com/sys1/admin/status.json
+
+
+models.MonitorGroup(develop_sys2):
+  name: SAN
+  environment: develop
+  sortKey: 2
+
+models.MonitorResource(develop_sys2_varnish):
+  name: Varnish
+  group: develop_sys2
+  url: http://develop.example.com/sys2/admin/status.json

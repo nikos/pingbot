@@ -1,0 +1,37 @@
+#{extends 'embedded.html' /}
+#{set title:'Ping Response Times' /}
+
+#{list items:environments, as: 'environment'}
+<div class="monitor_environment" data-name="${environment.name}">
+    #{list items:environment.groups, as: 'group'}
+        <div class="monitor_group" data-name="${group.name}">
+            #{list items:group.resources, as: 'resource'}
+                <div class="monitor_resource graph" data-name="${resource.name}">
+                    <h3><a href="@{details(resource.id)}" class="details">${resource.fullName}</a></h3>
+                    <div class="canvas" style="width:520px;height:90px;" data-resourceId="${resource.id}"></div>
+                </div>
+            #{/list}
+        </div>
+    #{/list}
+</div>
+#{/list}
+
+
+
+<script type="text/javascript">
+$(function () {
+
+    function drawAll() {
+        $("div.canvas").each(function (idx) {
+            getAndPlotData($(this), $(this).data('resourceId'));
+        });
+    }
+
+    drawAll();
+    setInterval(function() {
+        // Refresh regularly
+        drawAll();
+    }, 65000);
+
+});
+</script>
