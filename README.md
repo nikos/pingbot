@@ -43,5 +43,5 @@ To modify the resources being watched you can access a very simple (CRUD-based) 
     open http://localhost:9000/admin
 
 Have fun, and please let me know if you have improvements or want your git pull requests merged in.
-Niko
-@niko_nava
+
+Niko (@niko_nava)
