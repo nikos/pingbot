@@ -11,11 +11,11 @@ Requires
 
 * Java Development Kit (JDK >= 6)
 * [Play! Framework](http://www.playframework.org/documentation/1.2.5/install) (1.2.x)
-* MySQL Database (by default uses `pingbot` schema on localhost using 'root' user)
+* MySQL Database (by default uses `pingbot` schema on localhost access by 'root' user)
 
 
-Installaion
------------
+Setup
+-----
 
 Clone project by running 
 
@@ -30,7 +30,11 @@ Ensure your mysql root user is able to access those new schemes, otherwise confi
 
 To setup the initial HTTP resources you might want to copy `conf/initial-data-sample.yml` over to `conf/initial-data.yml` containing your individual server setup to monitor. This configuration is read in at the very first time you start pingbot.
 
-Now start pingbot by running:
+Before you can start the Play! application, you need to resolve the dependent modules by executing:
+
+    play deps
+
+Now you are ready to start pingbot by running:
 
     play run
 
