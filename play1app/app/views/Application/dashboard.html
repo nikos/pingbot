@@ -8,7 +8,7 @@
             #{list items:group.resources, as: 'resource'}
                 <div class="monitor_resource graph" data-name="${resource.name}">
                     <h3><a href="@{details(resource.id)}" class="details">${resource.fullName}</a></h3>
-                    <div class="canvas" style="width:520px;height:90px;" data-resourceId="${resource.id}"></div>
+                    <div class="canvas" style="width:520px;height:90px;" data-resourceid="${resource.id}"></div>
                 </div>
             #{/list}
         </div>
@@ -23,7 +23,7 @@ $(function () {
 
     function drawAll() {
         $("div.canvas").each(function (idx) {
-            getAndPlotData($(this), $(this).data('resourceId'));
+            getAndPlotData($(this), $(this).data('resourceid'), null, null, 'R');
         });
     }
 
