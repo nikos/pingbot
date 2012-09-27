@@ -46,6 +46,19 @@ To modify the resources being watched you can access a very simple (CRUD-based) 
 
     open http://localhost:9000/admin
 
+
+Screenshots
+-----------
+
+Example Dashboard View:
+
+![Pingbot Dashboard](https://raw.github.com/nikos/pingbot/master/play1app/doc/pingbot-screenshot-dashboard.png)
+
+Example Detail View:
+
+![Pingbot Detail View](https://raw.github.com/nikos/pingbot/master/play1app/doc/pingbot-screenshot-detail.png)
+
+
 Have fun, and please let me know if you have improvements or want your git pull requests merged in.
 
 Niko (@niko_nava)
