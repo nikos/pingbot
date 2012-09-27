@@ -19,13 +19,13 @@
 <h1>PingBot</h1>
 
 <p>
-    Start time:
+    <label for="starttime">Start time:</label>
     <input name="starttime" id="starttime" class="datetime" />
 
-    End time:
+    <label for="endtime">End time</label>
     <input name="endtime" id="endtime" class="datetime" />
 
-    URL:
+    <label for="resourceId">URL:</label>
     <select name="resourceId" id="resourceId">
     #{list items:environments, as:'environment'}
         #{list items:environment.groups, as:'group'}

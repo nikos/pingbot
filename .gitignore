@@ -3,6 +3,7 @@ modules/
 lib/
 test-result/
 logs/
+precompiled/
 *.ipr
 *.iws
 *.iml

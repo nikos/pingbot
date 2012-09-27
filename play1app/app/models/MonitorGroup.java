@@ -8,7 +8,7 @@ import java.util.List;
 
 /**
  * One monitoring group belongs to exactly one environment,
- * and can refer to one or more nodes.
+ * and can refer to one or more resources.
  *
  * @author Niko Schmuck
  */

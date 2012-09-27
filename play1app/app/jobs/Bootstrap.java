@@ -6,6 +6,9 @@ import play.jobs.Job;
 import play.jobs.OnApplicationStart;
 import play.test.Fixtures;
 
+/**
+ * Initialize database from YAML definition, if no resources yet defined.
+ */
 @OnApplicationStart
 public class Bootstrap extends Job {
 

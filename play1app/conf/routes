@@ -3,7 +3,7 @@
 # ~~~~
 
 # Home page
-GET     /                                       Application.availability
+GET     /                                       Application.query
 GET     /dashboard                              Application.dashboard
 GET     /details/{resourceId}                   Application.details
 

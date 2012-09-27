@@ -39,7 +39,7 @@ public class PingPoint extends Model {
     public int responseTime;
 
 
-    // -- TODO: attributes
+    // -- TODO: model attributes into own entity
 
     // Results from Status JSON
     public String hostname;

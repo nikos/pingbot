@@ -9,7 +9,8 @@ import javax.persistence.Table;
 
 /**
  * One monitoring resource is the configuration object for an
- * URL endpoint which is going to be checked in regular intervals.
+ * URL endpoint (belonging to one MonitorGrup) which is going
+ * to be checked in regular intervals.
  *
  * @author Niko Schmuck
  */
@@ -29,7 +30,7 @@ public class MonitorResource extends Model {
     public String password;
     public String cookie;
 
-    // TODO: make frequency configurable
+    // TODO: make frequency configurable?
 
     @ManyToOne
     public MonitorGroup group;

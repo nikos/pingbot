@@ -5,6 +5,7 @@ import models.PingPoint;
 
 /**
  * @author Niko Schmuck
+ *
  */
 public final class JsonStatusParser {
 
