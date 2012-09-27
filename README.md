@@ -1,7 +1,7 @@
 pingbot
 =======
 
-Automatically monitor your HTTP resources and visualize their health over the last past hours. Multiple resources can be grouped togehter, which again be put into an environment, allowing you to manage a larger amount of servers you would like to monitor. 
+Automatically monitor your HTTP resources and visualize their health over the last past hours. Multiple resources can be grouped together, which again be put into an environment, allowing you to manage a larger amount of servers you would like to monitor. 
 
 pingbot is a simple monitoring app which checks regularly (default: every minute) web pages you configured and saves the result (including response times) to a database and displayed as near-realtime plots. Beside the measure result, there is a database table holding the availability changes, which allows you to hook in and customize the way you want to be notified about resource outages.
 
