@@ -30,6 +30,13 @@ public class MonitorGroup extends Model {
 
     // ~~
 
+    public MonitorResource getPrimaryResource() {
+        for (MonitorResource res : resources) {
+            if (res.is_primary) return res;
+        }
+        return null;
+    }
+
     @Override
     public String toString() {
         return name + " (" + (environment != null ? environment.name : "N/A") + ')';

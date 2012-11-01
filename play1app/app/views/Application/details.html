@@ -2,8 +2,8 @@
 #{set title: 'Details: ' + resource.fullName /}
 
 
-<h1>Details</h1>
-<h2 class="subline">${url}</h2>
+<h1>Details: ${resource.name}</h1>
+<h2 class="subline">${resource.url}</h2>
 
 <div class="graph">
     <h3>Response Time (ms)</h3>
@@ -20,6 +20,8 @@
     <div id="canvas_freemem" class="canvas" style="width:580px;height:220px;"></div>
 </div>
 
+
+<a href="@{dashboard()}">Zurück zum Dashboard</a>
 
 <script type="text/javascript">
 $(function () {

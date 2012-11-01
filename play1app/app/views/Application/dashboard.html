@@ -3,14 +3,22 @@
 
 #{list items:environments, as: 'environment'}
 <div class="monitor_environment" data-name="${environment.name}">
+    <h2>${environment.name}</h2>
     #{list items:environment.groups, as: 'group'}
         <div class="monitor_group" data-name="${group.name}">
+            <h3>${group.name}</h3>
+            <div class="monitor_resource graph" data-name="${group.name}">
+                <div class="canvas" onclick="window.location='@{details(group.getPrimaryResource().id)}'" style="width:650px;height:80px;" data-resourceid="${group.getPrimaryResource().id}"></div>
+            </div>
             #{list items:group.resources, as: 'resource'}
-                <div class="monitor_resource graph" data-name="${resource.name}">
-                    <h3><a href="@{details(resource.id)}" class="details">${resource.fullName}</a></h3>
-                    <div class="canvas" style="width:520px;height:90px;" data-resourceid="${resource.id}"></div>
+                #{if !resource.is_primary}
+                <div class="monitor_resource graph" data-name="${resource.name}" style="float: left">
+                    <span class="title"><a href="@{details(resource.id)}" class="details">${resource.name}</a></span>
+                    <div class="canvas" onclick="window.location='@{details(resource.id)}'" style="margin-top:3px;width:120px;height:40px;" data-resourceid="${resource.id}"></div>
                 </div>
+                #{/if}
             #{/list}
+            <div style="clear: both;"></div>
         </div>
     #{/list}
 </div>

@@ -7,4 +7,6 @@ precompiled/
 *.ipr
 *.iws
 *.iml
+*~
 initial-data.yml
+server.pid
