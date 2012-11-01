@@ -22,6 +22,10 @@ public class MonitorResource extends Model {
     public String name;
 
     public String sortKey;
+    // TODO: add tags to help filter resources later on / or use type
+    public String type;
+
+    public boolean is_primary;
 
     @Required
     public String url;
