@@ -1,0 +1,23 @@
+{
+    "description": "Die Jobs, die für den Status der Build Ampel eingehen.",
+    "jobs": [
+    {
+        "name": "P_01.01_Build",
+        "url": "http://jenkins:8080/job/P_01.01_Build/",
+        "color": "blue"
+    },
+    {
+        "name": "S_01.04_Basistests_CI",
+        "url": "http://jenkins:8080/job/S_01.04_Basistests_CI/",
+        "color": "red"
+    },
+    {
+        "name": "S_04_Testcoverage+Findbugs",
+        "url": "http://jenkins:8080/job/S_04_Testcoverage+Findbugs/",
+        "color": "blue"
+    }
+    ],
+    "name": "BuildLights",
+    "property": [],
+    "url": "http://jenkins:8080/view/BuildLights/"
+}

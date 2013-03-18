@@ -51,7 +51,13 @@ public final class ResourceChecker {
         PingPoint current = new PingPoint(resource, new Date(startTime), statusCode, statusMessage, elapsed);
         // TODO: Enable to plugin different response parsers
         if (current.isOK() && response != null && response.getContentType().contains("json")) {
-            JsonStatusParser.enrich(response.getJson().getAsJsonObject(), current);
+            if (resource.type.equalsIgnoreCase("tomcat")) {
+                JsonStatusParser.enrich(response.getJson().getAsJsonObject(), current);
+            } else if (resource.type.equalsIgnoreCase("jenkins")) {
+                AggregatedJenkinsJsonParser.enrich(response.getJson().getAsJsonObject(), current);
+            } else {
+                Logger.debug("Unsupported JSON content type %s", response.getContentType());
+            }
         }
         if (previous != null) {
             // has the status changed compared to previous state?

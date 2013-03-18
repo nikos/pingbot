@@ -16,7 +16,7 @@ public class Bootstrap extends Job {
         if (MonitorResource.count() == 0) {
             Fixtures.deleteDatabase();
             Logger.info("Importing bootstrap data ...");
-            Fixtures.loadModels("initial-data.yml");
+            Fixtures.loadModels("data/test-data.yml");
         }
     }
 
