@@ -10,11 +10,11 @@ h2 {
   text-transform: uppercase;
   text-align: center;
   display: block;
-  width: 320px;
+  width: 344px;
   height: 40px;
   position: absolute;
-  bottom: 140px;
-  left: -140px;
+  bottom: 152px;
+  left: -152px;
   margin: auto;
   padding: 0;
   color: white;
@@ -38,9 +38,9 @@ h3 {
   -ms-transform: rotate(-90deg);
   -o-transform: rotate(-90deg);
   transform: rotate(-90deg);
-  width: 160px;
-  left: -70px;
-  bottom: 69px;
+  width: 172px;
+  left: -76px;
+  bottom: 75px;
   background: #999999;
   color: white;
 }
@@ -53,8 +53,8 @@ h3.san {
 /* line 37, ../../sass/standAlone.sass */
 .monitor_environment {
   position: relative;
-  height: 320px;
-  width: 730px;
+  height: 344px;
+  width: 860px;
   float: left;
   margin: 5px;
 }
@@ -63,7 +63,7 @@ h3.san {
   position: relative;
   margin-left: 40px;
   padding-left: 25px;
-  height: 160px;
+  height: 172px;
 }
 /* line 48, ../../sass/standAlone.sass */
 .monitor_environment .monitor_group:nth-child(2n) {
