@@ -1,6 +1,6 @@
 /* line 4, ../../sass/standAlone.sass */
 body {
-  background: #222222;
+  background: black;
   font-family: "Open Sans", sans-serif;
   padding-top: 10px;
 }
@@ -64,16 +64,17 @@ h3.san {
   margin-left: 40px;
   padding-left: 25px;
   height: 172px;
+  background: #222222;
 }
-/* line 48, ../../sass/standAlone.sass */
+/* line 49, ../../sass/standAlone.sass */
 .monitor_environment .monitor_group:nth-child(2n) {
   background: #333333;
 }
-/* line 50, ../../sass/standAlone.sass */
+/* line 51, ../../sass/standAlone.sass */
 .monitor_environment .monitor_group .monitor_resource {
   padding-top: 5px;
 }
-/* line 52, ../../sass/standAlone.sass */
+/* line 53, ../../sass/standAlone.sass */
 .monitor_environment .monitor_group .details {
   display: none;
 }
