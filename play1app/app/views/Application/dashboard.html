@@ -8,7 +8,7 @@
         <div class="monitor_group" data-name="${group.name}">
             <h3>${group.name}</h3>
             <div class="monitor_resource graph" data-name="${group.name}">
-                <div class="canvas" onclick="window.location='@{details(group.getPrimaryResource().id)}'" style="width:780px;height:110px;" data-resourceid="${group.getPrimaryResource().id}"></div>
+                <div class="canvas" onclick="window.location='@{details(group.getPrimaryResource().id)}'" style="width:850px;height:110px;" data-resourceid="${group.getPrimaryResource().id}"></div>
             </div>
             #{list items:group.resources, as: 'resource'}
                 #{if !resource.is_primary}
