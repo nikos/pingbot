@@ -1,65 +1,65 @@
-/* line 4, ../sass/pingbot.sass */
+/* line 4, ../../sass/standAlone.sass */
 body {
-    background: #222222;
-    font-family: "Open Sans", sans-serif;
-    padding-top: 10px;
+  background: #222222;
+  font-family: "Open Sans", sans-serif;
+  padding-top: 10px;
 }
 
-/* line 8, ../sass/pingbot.sass */
+/* line 8, ../../sass/standAlone.sass */
 h2 {
-    text-transform: uppercase;
-    text-align: center;
-    display: block;
-    width: 320px;
-    height: 40px;
-    position: absolute;
-    bottom: 140px;
-    left: -140px;
-    margin: auto;
-    padding: 0;
-    color: white;
-    background: #666666;
-    -webkit-transform: rotate(-90deg);
-    -moz-transform: rotate(-90deg);
-    -ms-transform: rotate(-90deg);
-    -o-transform: rotate(-90deg);
-    transform: rotate(-90deg);
+  text-transform: uppercase;
+  text-align: center;
+  display: block;
+  width: 320px;
+  height: 40px;
+  position: absolute;
+  bottom: 140px;
+  left: -140px;
+  margin: auto;
+  padding: 0;
+  color: white;
+  background: #666666;
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg);
 }
 
-/* line 22, ../sass/pingbot.sass */
+/* line 22, ../../sass/standAlone.sass */
 h3 {
-    text-transform: uppercase;
-    text-align: center;
-    margin: auto;
-    padding: 0;
-    position: absolute;
-    -webkit-transform: rotate(-90deg);
-    -moz-transform: rotate(-90deg);
-    -ms-transform: rotate(-90deg);
-    -o-transform: rotate(-90deg);
-    transform: rotate(-90deg);
-    width: 160px;
-    left: -70px;
-    bottom: 67px;
-    background: #999999;
-    color: white;
+  text-transform: uppercase;
+  text-align: center;
+  margin: auto;
+  padding: 0;
+  position: absolute;
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  width: 160px;
+  left: -70px;
+  bottom: 69px;
+  background: #999999;
+  color: white;
 }
 
-/* line 34, ../sass/pingbot.sass */
+/* line 34, ../../sass/standAlone.sass */
 h3.san {
-    background: #333333;
+  background: #333333;
 }
 
-/* line 37, ../sass/pingbot.sass */
+/* line 37, ../../sass/standAlone.sass */
 .monitor_environment {
-    position: relative;
-    height: 320px;
-    margin: 5px;
+  position: relative;
+  height: 320px;
+  margin: 5px;
 }
-/* line 41, ../sass/pingbot.sass */
+/* line 41, ../../sass/standAlone.sass */
 .monitor_environment .monitor_group {
-    position: relative;
-    margin-left: 40px;
-    padding-left: 25px;
-    height: 160px;
+  position: relative;
+  margin-left: 40px;
+  padding-left: 25px;
+  height: 160px;
 }

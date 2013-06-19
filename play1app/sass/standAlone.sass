@@ -1,0 +1,45 @@
+@import compass
+$height: 320px
+$headline_width: 40px
+body
+  background: #222222
+  font-family: 'Open Sans', sans-serif
+  padding-top: 10px
+h2
+  text-transform: uppercase
+  text-align: center
+  display: block
+  width: $height
+  height: $headline_width
+  position: absolute
+  bottom: $height / 2 - $headline_width / 2
+  left: - $height / 2 + $headline_width / 2
+  margin: auto
+  padding: 0
+  color: #ffffff
+  background: #666666
+  +rotate(-90deg)
+h3
+  text-transform: uppercase
+  text-align: center
+  margin: auto
+  padding: 0
+  position: absolute
+  +rotate(-90deg)
+  width: $height / 2
+  left: - $height / 4 + $headline_width / 4
+  bottom: ($height / 4) - ($headline_width / 4) - 1px
+  background: #999999
+  color: #ffffff
+h3.san
+  background: #333333
+
+.monitor_environment
+  position: relative
+  height: $height
+  margin: 5px
+  .monitor_group
+    position: relative
+    margin-left: $headline_width
+    padding-left: 25px
+    height: $height / 2
