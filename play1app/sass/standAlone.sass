@@ -37,11 +37,17 @@ h3.san
 .monitor_environment
   position: relative
   height: $height
+  width: 730px
+  float: left
   margin: 5px
   .monitor_group
     position: relative
     margin-left: $headline_width
     padding-left: 25px
     height: $height / 2
+    &:nth-child(2n)
+      background: #333
+    .monitor_resource
+      padding-top: 5px
     .details
       display: none

@@ -54,16 +54,26 @@ h3.san {
 .monitor_environment {
   position: relative;
   height: 320px;
+  width: 730px;
+  float: left;
   margin: 5px;
 }
-/* line 41, ../../sass/standAlone.sass */
+/* line 43, ../../sass/standAlone.sass */
 .monitor_environment .monitor_group {
   position: relative;
   margin-left: 40px;
   padding-left: 25px;
   height: 160px;
 }
-/* line 46, ../../sass/standAlone.sass */
+/* line 48, ../../sass/standAlone.sass */
+.monitor_environment .monitor_group:nth-child(2n) {
+  background: #333333;
+}
+/* line 50, ../../sass/standAlone.sass */
+.monitor_environment .monitor_group .monitor_resource {
+  padding-top: 5px;
+}
+/* line 52, ../../sass/standAlone.sass */
 .monitor_environment .monitor_group .details {
   display: none;
 }
