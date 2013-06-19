@@ -10,3 +10,4 @@ precompiled/
 *~
 initial-data.yml
 server.pid
+.idea/
