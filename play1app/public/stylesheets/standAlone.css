@@ -41,7 +41,7 @@ h3 {
   width: 172px;
   left: -76px;
   bottom: 75px;
-  background: #999999;
+  background: rgba(255, 255, 255, 0.1);
   color: white;
 }
 
