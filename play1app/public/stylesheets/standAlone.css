@@ -39,7 +39,7 @@ h3 {
   -o-transform: rotate(-90deg);
   transform: rotate(-90deg);
   width: 172px;
-  left: -79px;
+  left: -73px;
   bottom: 75px;
   background: rgba(255, 255, 255, 0.1);
   color: white;
@@ -62,7 +62,7 @@ h3.san {
 .monitor_environment .monitor_group {
   position: relative;
   margin-left: 40px;
-  padding-left: 25px;
+  padding-left: 30px;
   height: 172px;
   background: #222222;
 }
